@@ -115,6 +115,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @ConditionalOnBean(name = "dynamicSecurityService")
     @Bean
     public DynamicSecurityFilter dynamicSecurityFilter() {
+        System.out.println();
         return new DynamicSecurityFilter();
     }
 
